@@ -1,0 +1,167 @@
+/*Enlace de fuente */
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway',sans-serif, Helvetica;
+  background-color: #edf5e1;
+}
+ul,ol{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+
+.container{
+  width: 100%;
+  margin: auto;
+}
+
+/*Header*/
+.main-header{
+  background-color:#05386b;
+  overflow: hidden;
+  max-height: 70px;
+  padding: 10 px;
+}
+
+.fas fa-shopping-cart{
+  color: beige;
+}
+
+.logo img{
+float: left;
+padding: 5px;
+padding-bottom: 5px;
+height: 80px;
+}
+
+.navbar{
+  float: right;
+  margin-top: 10px;
+}
+
+.navbar li{
+  display :inline-block;
+  margin: 0 15px;
+}
+
+.navbar li a {
+  color:#edf5e1;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  margin: 10px;
+}
+
+  .navbar li img {
+    height: 40px;
+    width: auto;
+  }
+
+
+/*JUGAR*/
+
+.jugar{
+  padding:15px;
+  text-align: center;
+  overflow: hidden;
+  background: linear-gradient(rgba(2, 11, 128, 0.5), rgba(2, 160, 94, 0.9)), url(../images/fondo.jpg);
+  background-position: center;
+  background-size: cover;
+  
+}
+
+.jugar h1{
+  color: white;
+  font-style: bold;
+  text-align:center;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  font-size: 10vh;
+}
+.subtitulo
+{
+  color: white;
+  font-size: 3vh;
+}
+.jugar form{
+  float:center;
+  margin-top: 50px;
+}
+
+.row {
+  justify-content: center;
+  padding: 10px;
+  margin: 10px;
+}
+
+.boxes{
+  margin-top: 0;
+  width: 100%; 
+  height: 300px;
+  background-color:#05386b;
+  
+  }
+.boxes #box{
+  float: left;
+  text-align: center;
+  width: 30%;
+  padding:10px;
+  margin: 0 15px 0 15px;
+   
+}
+.boxes #box a{
+  color: #edf5e1
+}
+.boxes #box img{
+  width:100%;
+  height: 200px;
+  border-radius: 5%;
+}
+
+.btn-primary {
+  background-color: white ;
+  border-color: white ;
+  color: #05386b;
+  margin: 10px;
+  font-style: bold;
+}
+
+footer{
+  padding:20px;
+  background-color: #edf5e1;
+  overflow: hidden;
+  height: 70px;
+}
+.footer-navbar {
+  float: right;
+  margin-top: 10px;
+}
+
+.footer-navbar li{
+  display :inline-block;
+  margin: 0px;
+  
+}
+
+.footer-navbar li a {
+  color:#05386b;
+  text-align: right;
+  text-transform: uppercase;
+  font-size: 10px;
+  margin: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.fab {
+  color: grey;
+  font-size: 5vh;
+}

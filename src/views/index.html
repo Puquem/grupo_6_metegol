@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>METEGOL|Home Page</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link href="/css/fontawesome-free-5.11.2-web/css/all.css" rel="stylesheet">
+	<link rel="stylesheet" href="/css/app.css">
+</head>
+<body>
+	<div class="container">
+		<!--Header-->
+		<header class="main-header">
+			<div class="logo">
+					<img src="/images/logo.png" alt="logo de metegol">
+			</div>
+
+			<nav class="navbar">
+				<ul>
+					<li> <a href="/buscoequipo">BUSCO EQUIPO</a></li>
+					<li><a href="/torneo">TORNEOS</a></li>
+					<li><a href="/carrito" title="Carrito"><i class="fas fa-shopping-cart"></i></a></li>
+					<li><a href="/login" title="Log in"><i class="fas fa-sign-in-alt"></i></a></li>
+				</ul>
+
+			</nav>
+
+		</header>
+		<!--Contenido-->
+		<section class="jugar">			
+					<h1> METEGOL</h1>
+					<p class="subtitulo">Reserve su cancha:</P>
+					<form class="container">
+						<div class="row">
+						<select name="localidad" id="localidad" class="col-8 col-lg-3">
+							<option selected>Seleccione una localidad</option>
+							<option value="Palermo">Palermo</option>
+							<option value="Recoleta">Recoleta</option>
+							<option value="Belgrano">Belgrano</option>
+						</select>				
+				
+						<p><label for=""></label></p>
+						<select name="cancha" id="cancha" class="col-8 col-lg-3">
+							<option selected>Seleccione tipo de cancha</option>
+							<option value="cinco">Futbol 5</option>
+							<option value="siete">Futbol 7</option>
+							<option value="once">Futbol 11</option>
+						</select>
+						
+						<input type="date" 	name="fecha" placeholder="Fecha" class="col-8 col-lg-3">
+						
+						</div>
+						<button type="submit" class="btn btn-primary"> Buscar </button>
+
+					</form>
+		</section>
+		<!--Cajas-->
+		<section class="boxes">
+				<div id="box">
+						<img src="/images/futbol.jpg">
+						<a href="/canchas"><h3 class="btn btn-primary">Ver canchas disponibles</h3></a>
+				</div>
+				<div id="box">
+							<img src="/images/torneo.jpg">
+							<a href="/torneos"><h3 class="btn btn-primary">Ver torneos disponibles</h3></a>
+				</div>
+				<div id="box">
+						<img src="/images/equipo.jpg">
+						<a href="partidos"><h3 class="btn btn-primary">Unirme a un partido</h3></a>
+				</div>
+				
+		
+		</section>
+			
+		<footer>
+				<nav class="footer-navbar">
+						<ul>
+							<li> <a href="/proovedores">¿Querés ser proovedor?  |</a></li>
+							<li><a href="/quienesomos">¿Quiénes somos?  |</a></li>
+							<li><a href="/pfrecuentes">Preguntas frecuentes</a></li>
+						</ul>
+				</nav>
+				<div class="redes">
+					<a href="https://facebook.com"><i class="fab fa-facebook-square"></i></a>
+					<a href="https://instagram.com"><i class="fab fa-instagram"></i></i></a>
+					<a href="https://twitter.com"><i class="fab fa-twitter-square"></i></a>
+				</div>
+		
+		</footer>
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>	
+	</div>
+</body>
+</html>
