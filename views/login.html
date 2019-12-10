@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!--===============================================================================================-->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<!--===============================================================================================-->
+		<link href="/css/fontawesome-free-5.11.2-web/css/all.css" rel="stylesheet">
+		<!--===============================================================================================-->
+		<link rel="stylesheet" href="/css/login.css">
+	
+		<title>METEGOL | Login</title>
+	</head>
+ <body>
+	
+	<!--Header-->
+	<header class="header">
+			<a href="#default" class="logo"><img src="/images/logo.png" alt="logo de metegol"></a>
+			<div class="header-right">
+				<ul>
+					<li><a href="/buscoequipo">BUSCO EQUIPO</a></li>
+					<li><a href="/torneo">TORNEOS</a></li>
+					<li><a href="/carrito" title="Carrito"><i class="fas fa-shopping-cart"></i></a></li>
+					<li><a href="/login" title="Log in"><i class="fas fa-user"></i></i></a></li>
+				</ul>
+			</div>	
+		</header>
+		
+	
+	<!--Main Content-->
+	<section class="login">
+		<form action="action_page.php" method="post">
+			<div class="container">
+				<h1>Ingresar</h1>
+	  		
+		  		<div for="uname"></div>
+				<input type="text" placeholder="Email" name="uname" required>
+				
+				<div for="psw"></div>
+				<input type="password" placeholder="Contraseña" name="psw" required>
+
+				<div><button type="submit" class="btn btn-primary">LOGIN</button></div>
+				<div class="manageUser">
+					<ul>
+						<li><a href="/register"><i class="fas fa-user-plus"></i>     Crear usuario</a></li>
+						<li><a href="/forgotpass"><i class="fas fa-unlock"></i>      Recuperar contraseña</a></li>
+					</ul>
+				</div>
+			</div> 
+		</form>
+	</section>
+
+	<!--Footer-->
+	<footer class="footer fixed-bottom">
+			<div class="footer-left">
+				<a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a>
+				<a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+				<a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+			</div>
+			<div class="footer-right">
+				<ul>
+					<li><a href="/proovedores">¿Querés ser proovedor?</a></li>
+					<li><a href="/quienesomos">¿Quiénes somos?</a></li>
+					<li><a href="/pfrecuentes">Preguntas frecuentes</a></li>
+				</ul>
+			</div>
+	</footer>
+ </body>
+</html>
