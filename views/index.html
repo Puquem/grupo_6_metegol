@@ -18,15 +18,18 @@
 		
 		<!--Header-->
 		<header class="header">
-			<a href="#default" class="logo"><img src="/images/logo.png" alt="logo de metegol"></a>
-			<div class="header-right">
-				<ul>
-					<li><a href="/buscoequipo">BUSCO EQUIPO</a></li>
-					<li><a href="/torneo">TORNEOS</a></li>
-					<li><a href="/carrito" title="Carrito"><i class="fas fa-shopping-cart"></i></a></li>
-					<li><a href="/login" title="Log in"><i class="fas fa-user"></i></i></a></li>
-				</ul>
-			</div>	
+			<div class="header-container">
+				<a href="#default" class="logo"><img src="/images/logo.png" alt="logo de metegol"></a>
+				<div class="header-right">
+					<ul>
+						<li><a href="/buscoequipo">BUSCO EQUIPO</a></li>
+						<li><a href="/torneo">TORNEOS</a></li>
+						<li><a href="/carrito" title="Carrito"><i class="fas fa-shopping-cart"></i></a></li>
+						<li><a href="/login" title="Log in"><i class="fas fa-user"></i></i></a></li>
+					</ul>
+				</div>
+				<a href="#" class="hamburguer-icon">TRES RAYITAS</a>
+			</div>
 		</header>
 		
 		<!--Contenido-->
@@ -35,7 +38,7 @@
 				<p class="subtitulo">Reservá tu cancha</P>
 					<form class="container">
 					<div class="row">
-						<select name="localidad" id="localidad" class="col-8 col-lg-3">
+						<select name="localidad" id="localidad" class="col-8 col-lg-3 rounded-pill">
 							<option selected>Localidad</option>
 							<option value="Palermo">Palermo</option>
 							<option value="Recoleta">Recoleta</option>
@@ -43,14 +46,14 @@
 						</select>				
 				
 						<p><label for=""></label></p>
-						<select name="cancha" id="cancha" class="col-8 col-lg-3">
+						<select name="cancha" id="cancha" class="col-8 col-lg-3 rounded-pill">
 							<option selected>Tipo de cancha</option>
 							<option value="cinco">Futbol 5</option>
 							<option value="siete">Futbol 7</option>
 							<option value="once">Futbol 11</option>
 						</select>
 						
-						<input type="date" name="fecha" placeholder="Fecha" class="col-8 col-lg-3">
+						<input type="date" name="fecha" placeholder="Fecha" class="col-8 col-lg-3 rounded-pill">
 						
 					</div>
 						
