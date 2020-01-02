@@ -1,6 +1,5 @@
 const fs = require('fs');
-const path = require('path');
-// path permite unificar la ruta de manera más cómoda
+const path = require('path'); // path permite unificar la ruta de manera más cómoda
 
 // ************ Function to Read an HTML File ************
 function readHTML (fileName) {
@@ -11,14 +10,16 @@ function readHTML (fileName) {
 // controller es la ruta que se exporta
 const controller = {
 	root: (req, res) => {
-		let html = readHTML('index');
-		res.send(html);
+		res.render("index");
 	},
 	 
 	login: (req, res) => {
-		let html = readHTML('login');
-		res.send(html);
-	}
+		res.render("login");
+	},
+
+	addProduct: (req, res) => {
+		res.render('addProduct');
+	},
 };
 
 module.exports = controller 

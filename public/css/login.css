@@ -10,7 +10,7 @@
 
 body {
   font-family: 'Raleway',sans-serif, Helvetica;
-  background-color:rgb(2, 160, 94);
+  background-color: #edf5e1;
 }
 
 ul,ol{
@@ -26,12 +26,29 @@ a {
 /*Header*/
 .header{
   background-color:#05386b;
-  overflow: hidden;
-  max-height: 70px;
+  height: 70px;
+}
+
+.header-container {
+  max-width: 1400px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.logo {
+  width: 200px;
+  margin-top: -30px;
+}
+
+.logo img {
+  width: 100%;
 }
 
 .header a{
-  float: left;
+  /*float: left;*/
   color: black;
   text-align: center;
   padding: 12px;
@@ -41,15 +58,12 @@ a {
   border-radius: 4px;
 }
 
-/*Logo*/
-.logo img{
-  float: left;
-  max-height: 50px;
-  margin: 0px 5px
+.hamburguer-icon {
+  display: none;
 }
 
 .header-right {
-  float: right;
+  margin-top: 20px;
 }
 
 .fas fa-shopping-cart{
@@ -74,6 +88,16 @@ a {
   width: auto;
 }
 
+@media (max-width: 670px) {
+ 
+  .header-right {
+    display: none;
+  }
+ 
+  .hamburguer-icon {
+    display: block;
+  }
+}
 /*Título Ingresar*/
 
 .login{
@@ -105,7 +129,6 @@ a {
   margin: 10px;
   padding: 50px;
 }
-
 
 input[type=text], input[type=password] {
     text-align: left;
@@ -181,7 +204,6 @@ button {
   margin: 10px;
 }
 
-  
 /* Mobile first*/
 
   @media (min-width:450px) and (orientation:portrait) {
