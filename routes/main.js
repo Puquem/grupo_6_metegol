@@ -11,4 +11,10 @@ router.get('/', mainController.root);
 /* GET - login. */
 router.get('/login', mainController.login);
 
+/* GET - addProduct */
+router.get('/addProduct', mainController.addProduct);
+
+/* GET - detalleProducto */
+router.get('/detalleproducto/:id', mainController.detalleproducto);
+
 module.exports = router;
