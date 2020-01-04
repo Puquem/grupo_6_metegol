@@ -7,6 +7,11 @@ function readHTML (fileName) {
 	return htmlFile;
 }
 
+function leerArchivo (fileName) {
+	let leerArchivo = fs.readFileSync(path.join(__dirname, `/../data/${fileName}.json`), 'utf-8');
+	return leerArchivo;
+}
+
 // controller es la ruta que se exporta
 const controller = {
 	root: (req, res) => {
@@ -20,6 +25,17 @@ const controller = {
 	addProduct: (req, res) => {
 		res.render('addProduct');
 	},
+
+
+	detalleproducto: (req, res) => {
+		
+		let canchas=JSON.parse(leerArchivo("products"));
+		let idCancha=req.params.id;
+		let cancha=canchas[idCancha];
+		res.render('detalleproducto',{cancha});
+
+	},
 };
+
 
 module.exports = controller 
