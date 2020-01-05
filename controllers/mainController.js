@@ -35,6 +35,10 @@ const controller = {
 		res.render('detalleproducto',{cancha});
 
 	},
+
+	user: (req, res) => {
+		res.render('user');
+	},
 };
 
 
