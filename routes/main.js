@@ -17,4 +17,7 @@ router.get('/addProduct', mainController.addProduct);
 /* GET - detalleProducto */
 router.get('/detalleproducto/:id', mainController.detalleproducto);
 
+/* GET - user */
+router.get('/user', mainController.user);
+
 module.exports = router;
