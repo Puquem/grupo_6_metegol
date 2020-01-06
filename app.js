@@ -17,8 +17,7 @@ app.use(cookieParser());
 
 // ************ Template Engine - (don't touch) ************
 app.set('view engine', 'ejs');
-
-
+app.set("views", "./views");
 
 // ************ WRITE YOUR CODE FROM HERE ************
 // ************ Route System require and use() ************
@@ -27,6 +26,9 @@ app.use('/', mainRouter);
 
 const userLogin = require('./routes/main');
 app.use('/login', userLogin);
+
+const addProduct = require('./routes/main');
+app.use('/addProduct', addProduct);
 
 // ************ DON'T TOUCH FROM HERE ************
 // ************ catch 404 and forward to error handler ************

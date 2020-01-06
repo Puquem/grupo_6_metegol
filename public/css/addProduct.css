@@ -58,85 +58,161 @@ a {
   border-radius: 4px;
 }
 
-
 .hamburguer-icon {
     display: none;
   }
   
-  .header-right {
-    margin-top: 20px;
-  }
+.header-right {
+  margin-top: 20px;
+}
   
-  .fas fa-shopping-cart{
-    color: beige;
-  }
+.fas fa-shopping-cart{
+  color: beige;
+}
   
-  .header-right li{
-    display:inline-block;
-    margin: 0px 5px;
-  }
+.header-right li{
+  display:inline-block;
+  margin: 0px 5px;
+}
   
-  .header-right a {
-    color:#edf5e1;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 16px;
-    margin: 10px;
-  }
+.header-right a {
+  color:#edf5e1;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  margin: 10px;
+}
   
-  .header-right img {
-    height: 40px;
-    width: auto;
-  }
+.header-right img {
+  height: 40px;
+  width: auto;
+}
   
-  @media (max-width: 670px) {
+@media (max-width: 670px) {
+  
+.header-right {
+  display: none;
+}
    
-    .header-right {
-      display: none;
-    }
-   
-    .hamburguer-icon {
-      display: block;
-    }
-  }
+.hamburguer-icon {
+  display: block;
+}
+}
 
-  /*Footer*/
+/*Body Gral*/
+
+.product{
+  padding:15px;
+  text-align: center;
+  overflow: hidden;
+  background: linear-gradient(rgba(2, 11, 128, 0.5), rgba(2, 160, 94, 0.9)), url(../images/fondo.jpg);
+  background-position: center;
+  background-size: cover;
+} 
+
+/* Formulario*/
+
+.product form{
+  margin: 10px;
+  padding: 50px;
+}
+
+.form-container{
+  background-color: #edf5e1;
+  padding: 30px;
+  border: 2px solid red;
+}
+
+.form-container h1{
+  align-items: center;
+  color: rgb(65, 65, 65);
+  text-align: left;
+  font-style: bold;
+  margin-bottom: 30px;
+  font-size: 3vh;
+  border: 2px solid blueviolet;
+}
+
+.form-blanks{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 2px solid green;
+}
+
+/*
+input [type=text], input [type=number]{
+  width: 70%;
+  margin: 8px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+#localidad{
+  margin: 8px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+#cancha{
+  margin: 8px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+*/
+  
+/* Botón GUARDAR*/
+.btn {
+  background-color: white ;
+  border-color: white ;
+  color: #05386b;
+  margin-top: 15px;
+  font-style: bold;
+  cursor: pointer;
+}
+
+/*Footer*/
 .footer{
-    background-color:#05386b;
-    overflow: hidden;
-    max-height: 70px;
-  }
+  background-color:#05386b;
+  overflow: hidden;
+  max-height: 70px;
+}
   
-  .footer-left a{
-    float: left;
-    text-align: center;
-    padding: 12px;
-    text-decoration: none;
-    font-size: 18px;
-    line-height: 25px;
-    border-radius: 4px;
-  }
+.footer-left a{
+  float: left;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
   
-  .footer-left i{
-    color: #edf5e1;
-    font-size: 3vh;
-  }
+.footer-left i{
+  color: #edf5e1;
+  font-size: 3vh;
+}
   
-  .footer-right{
-    float: right;
-    margin-top: 10px;
-  }
+.footer-right{
+  float: right;
+  margin-top: 10px;
+}
   
-  .footer-right li{
-    display :inline-block;
-    margin: 5px;
-  }
+.footer-right li{
+  display :inline-block;
+  margin: 5px;
+}
   
-  .footer-right li a {
-    color:#edf5e1;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 10px;
-    margin: 10px;
-  }
+.footer-right li a {
+  color:#edf5e1;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 10px;
+  margin: 10px;
+}
   
