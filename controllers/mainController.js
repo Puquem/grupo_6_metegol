@@ -10,7 +10,12 @@ function readHTML (fileName) {
 	return htmlFile;
 }
 
-// Controller es la ruta que se exporta
+function leerArchivo (fileName) {
+	let leerArchivo = fs.readFileSync(path.join(__dirname, `/../data/${fileName}.json`), 'utf-8');
+	return leerArchivo;
+}
+
+// controller es la ruta que se exporta
 const controller = {
 	root: (req, res) => {
 		res.render("index");
@@ -53,7 +58,7 @@ const controller = {
 		res.send ("Producto creado con éxito");
 	},
 
-	deleteProduct: (req, res) => {
+	productDetail: (req, res) => {
 		let arrayProducts = JSON.parse(productsJSON);
 		let deleteProduct = arrayProducts.filter(function (aProduct){
 			return aProduct.id != req.params.id;
@@ -62,6 +67,21 @@ const controller = {
 		fs.writeFileSync (productsJSON, JSON.stringify (deleteProduct, null, " "));
 		res.redirect ("/")
 	},
+
+
+	productDetail: (req, res) => {
+		
+		let canchas=JSON.parse(leerArchivo("products"));
+		let idCancha=req.params.id;
+		let cancha=canchas[idCancha];
+		res.render('productDetail',{cancha});
+
+	},
+
+	user: (req, res) => {
+		res.render('user');
+	},
 };
+
 
 module.exports = controller 
