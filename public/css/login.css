@@ -4,13 +4,18 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
 
 /*CSS Base*/
+
 * {
   box-sizing: border-box;
 }
 
 body {
   font-family: 'Raleway',sans-serif, Helvetica;
-  background-color: rgb(2, 160, 94);
+  background: linear-gradient(rgba(2, 11, 128, 0.5), rgba(2, 160, 94, 0.5)), url(../images/fondo.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 ul,ol{
@@ -98,62 +103,71 @@ a {
     display: block;
   }
 }
-/*Título Ingresar*/
 
-.login{
-  padding:15px;
+/* Main Content*/ 
+
+.align{
   text-align: center;
-  overflow: hidden;
-  background: linear-gradient(rgba(2, 11, 128, 0.5), rgba(2, 160, 94, 0.9)), url(../images/fondo.jpg);
-  background-position: center;
-  background-size: cover;
-} 
-
-/* Formulario*/
-
-.container{
-  background-color: #edf5e1;
-  padding: 30px 0px 30px;
+  margin:10%;
 }
 
-.login h1{
+.form{
+  display: inline-block;
+  top: 50%;
+  background: rgba(245, 241, 241, 0.8);
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  width: 500px;
+}
+
+.form h1{
   color: rgb(65, 65, 65);
   text-align: left;
   font-style: bold;
   margin-bottom: 30px;
   font-size: 3vh;
-  margin-left: 15%;
+  margin-left: 5%;
 }
 
-.login form{
-  margin: 10px;
-  padding: 50px;
+.input-fields input,
+.input-fields-sd input
+{
+  margin: 10px 0;
+  background: transparent;
+  border: 0px;
+  border-bottom: 2px solid #063549;
+  padding: 10px;
+  color:#063549;
+  width: 100%;
 }
 
-input[type=text], input[type=password] {
-  text-align: left;
-  width: 70%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
+ 
+ ::placeholder {
+
+  color: #072c3b;
 }
-  
+
+ 
 /* Botón SIGNUP*/
-button {
-  background-color: white ;
-  border-color: white ;
-  color: #05386b;
-  margin-top: 15px;
-  font-style: bold;
+
+.btn {
+  background-color:#05386b; ;
+  border-color:#05386b; ;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  border-radius: 5px;
   cursor: pointer;
+  text-transform: uppercase;
+  float: center;
+  cursor: pointer;
+  margin-top:30px;
 }
 
 .manageUser{
  text-align: left;
- margin-left: 15%;
- margin-top: 15px;
+ margin-top: 30px;
 }
 
 .manageUser li{
@@ -204,7 +218,7 @@ button {
   margin: 10px;
 }
 
-/* Mobile first*/
+  /* Mobile first*/
 
   @media (min-width:450px) and (orientation:portrait) {
     .container {
@@ -216,3 +230,12 @@ button {
       width: 40%
   }}
   
+  @media screen and (max-width: 600px){
+    .login-container{
+      flex-direction: column;
+    }
+    
+    input{
+      width: 100%;
+    }
+  } 

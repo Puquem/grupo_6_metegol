@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,12 +14,13 @@
 	
 		<title>METEGOL | Login</title>
 	</head>
+ 
  <body>
 	
 	<!--Header-->
 	<header class="header">
 		<div class="header-container">
-			<a href="#default" class="logo"><img src="/images/logo.png" alt="logo de metegol"></a>
+			<a href="/" class="logo"><img src="/images/logo.png" alt="logo de metegol"></a>
 			<div class="header-right">
 				<ul>
 					<li><a href="/buscoequipo">BUSCO EQUIPO</a></li>
@@ -31,28 +33,26 @@
 	</header>
 		
 	<!--Main Content-->
-	<section class="login">
-		<form method="post">
-			<div class="container">
-				<h1>Ingresar</h1>
-	  		
-		  		<div for="uname"></div>
-				<input type="text" placeholder="Email" name="uname" required>
-				
-				<div for="psw"></div>
-				<input type="password" placeholder="Contraseña" name="psw" required>
-
-				<div><button type="submit" class="btn btn-primary">LOGIN</button></div>
+	
+	<div class="align">
+		<div class="form">
+			<h1>Ingresa</h1>
+				<div class="user-form">
+					<div class="input-fields">
+						<input type="text" class="input" placeholder="Email*" name="uname" required>
+						<input type="password" class="input" placeholder="Contraseña*" name="pwd" required>
+					</div>
+				</div>
+			<div><button type="submit" class="btn btn-primary">LOGIN</button></div>
 				<div class="manageUser">
 					<ul>
-						<li><a href="/user"><i class="fas fa-user-plus"></i>     Crear usuario</a></li>
+						<li><a href="/user"><i class="fas fa-user-plus"></i>     Crea tu usuario</a></li>
 						<li><a href="/forgotpass"><i class="fas fa-unlock"></i>      Recuperar contraseña</a></li>
 					</ul>
-				</div>
-			</div> 
-		</form>
-	</section>
-
+				</div>	
+		</div>
+	</div>
+	
 	<!--Footer-->
 	<footer class="footer fixed-bottom">
 			<div class="footer-left">

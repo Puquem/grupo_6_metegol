@@ -9,7 +9,13 @@
 
 body {
   font-family: 'Raleway',sans-serif, Helvetica;
-  background-color: #edf5e1;
+  background: linear-gradient(rgba(2, 11, 128, 0.5), rgba(2, 160, 94, 0.5)), url(../images/fondo.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 200%;
+  width: 100%;
 }
 
 ul,ol{
@@ -46,7 +52,6 @@ a {
   width: 100%;
 }
 
-
 .header a{
   /*float: left;*/
   color: black;
@@ -57,21 +62,6 @@ a {
   line-height: 25px;
   border-radius: 4px;
 }
-
-/*Logo*/
-
-/*
-.logo img{
-  position: absolute;
-  left: 15px;
-  top: -30px;
-  width: auto;
-  height: 100%;
-  max-height: 200px;
-  margin: 0px 5px;
-  size: auto;
-}
-*/
 
 .hamburguer-icon {
   display: none;
@@ -120,9 +110,6 @@ a {
   padding:15px;
   text-align: center;
   overflow: hidden;
-  background: linear-gradient(rgba(2, 11, 128, 0.5), rgba(2, 160, 94, 0.9)), url(../images/fondo.jpg);
-  background-position: center;
-  background-size: cover;
 }
 
 .jugar h1{
@@ -133,8 +120,8 @@ a {
   margin-bottom: 10px;
   font-size: 10vh;
 }
-.subtitulo
-{
+
+.subtitulo{
   color: white;
   font-size: 3vh;
 }
@@ -147,7 +134,7 @@ a {
 .row {
   justify-content: center;
   padding: 10px;
-  margin: 10px;
+  margin-top: 50px;
 }
 
 /*Cajas*/
@@ -159,8 +146,7 @@ a {
 .row #box{
   justify-content: center;
   padding: 10px;
-  margin-top: 10px;
-  background-color:rgb(2, 160, 94);
+  margin-top: 50px;
   box-sizing: border-box;
 }
 
@@ -172,9 +158,9 @@ a {
 }
 
 .btn-primary {
-  background-color: white ;
-  border-color: white ;
-  color: #05386b;
+  background-color:#05386b; ;
+  border-color:#05386b; ;
+  color: white;
   margin: 10px;
   font-style: bold;
 }
