@@ -3,13 +3,18 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
 
 /*CSS Base*/
+
 * {
   box-sizing: border-box;
 }
 
 body {
   font-family: 'Raleway',sans-serif, Helvetica;
-  background-color: #edf5e1;
+  background: linear-gradient(rgba(2, 11, 128, 0.5), rgba(2, 160, 94, 0.5)), url(../images/fondo.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 ul,ol{
@@ -46,7 +51,6 @@ a {
   width: 100%;
 }
 
-
 .header a{
   /*float: left;*/
   color: black;
@@ -57,21 +61,6 @@ a {
   line-height: 25px;
   border-radius: 4px;
 }
-
-/*Logo*/
-
-/*
-.logo img{
-  position: absolute;
-  left: 15px;
-  top: -30px;
-  width: auto;
-  height: 100%;
-  max-height: 200px;
-  margin: 0px 5px;
-  size: auto;
-}
-*/
 
 .hamburguer-icon {
   display: none;
@@ -113,7 +102,22 @@ a {
     display: block;
   }
 }
+
 /* body*/
+
+.align{
+  text-align: left;
+  margin:5%;
+}
+
+.form{
+  display: inline-block;
+  top: 50%;
+  background: rgba(245, 241, 241, 0.8);
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
 
 .nombreCancha{
     margin-top: 45px;
@@ -155,7 +159,6 @@ a {
 .reserva
 {
     width: 30%;
-    margin-top: 45px;
     justify-content: center;
     align-items: center;
     background-color: #edf5e1;
@@ -193,7 +196,8 @@ button {
   font-style: bold;
   cursor: pointer;
 }
-    /*Footer*/
+
+/*Footer*/
 .footer{
   background-color:#05386b;
   overflow: hidden;

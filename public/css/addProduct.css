@@ -3,13 +3,18 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
 
 /*CSS Base*/
+
 * {
   box-sizing: border-box;
 }
 
 body {
   font-family: 'Raleway',sans-serif, Helvetica;
-  background-color: #edf5e1;
+  background: linear-gradient(rgba(2, 11, 128, 0.5), rgba(2, 160, 94, 0.5)), url(../images/fondo.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 ul,ol{
@@ -46,7 +51,6 @@ a {
   width: 100%;
 }
 
-
 .header a{
   /*float: left;*/
   color: black;
@@ -59,22 +63,22 @@ a {
 }
 
 .hamburguer-icon {
-    display: none;
-  }
-  
+  display: none;
+}
+
 .header-right {
   margin-top: 20px;
 }
-  
+
 .fas fa-shopping-cart{
   color: beige;
 }
-  
+
 .header-right li{
   display:inline-block;
   margin: 0px 5px;
 }
-  
+
 .header-right a {
   color:#edf5e1;
   text-align: center;
@@ -82,35 +86,100 @@ a {
   font-size: 16px;
   margin: 10px;
 }
-  
+
 .header-right img {
   height: 40px;
   width: auto;
 }
-  
+
 @media (max-width: 670px) {
-  
-.header-right {
-  display: none;
-}
-   
-.hamburguer-icon {
-  display: block;
-}
+ 
+  .header-right {
+    display: none;
+  }
+ 
+  .hamburguer-icon {
+    display: block;
+  }
 }
 
-/*Body Gral*/
+/* Main Content*/ 
 
-.product{
-  padding:15px;
+.align{
   text-align: center;
-  overflow: hidden;
-  background: linear-gradient(rgba(2, 11, 128, 0.5), rgba(2, 160, 94, 0.9)), url(../images/fondo.jpg);
-  background-position: center;
-  background-size: cover;
-} 
+  margin:10%;
+}
 
-/* Formulario*/
+.form{
+  display: inline-block;
+  top: 50%;
+  background: rgba(245, 241, 241, 0.8);
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.form h1{
+  color: rgb(65, 65, 65);
+  text-align: left;
+  font-style: bold;
+  margin-bottom: 30px;
+  font-size: 3vh;
+}
+
+.user-form{
+  display: flex;
+  max-width: 550px;
+  margin: 0 auto;
+} 
+  
+
+.input-fields{
+  display: flex;
+  flex-direction: column;
+  margin-right: 4%;
+}
+ 
+.input-fields,
+.input-fields-sd
+{
+  width: 50%;
+}
+ 
+.input-fields input,
+.input-fields-sd input
+{
+  margin: 10px 0;
+  background: transparent;
+  border: 0px;
+  border-bottom: 2px solid #063549;
+  padding: 10px;
+  color:#063549;
+  width: 100%;
+}
+
+.description{
+  float: center;
+  text-align: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.btn {
+  background-color:#05386b; ;
+  border-color:#05386b; ;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  float: center;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+/* Formulario
 
 .product form{
   margin: 10px;
@@ -140,7 +209,7 @@ a {
   align-items: flex-start;
   border: 2px solid green;
 }
-
+*/
 /*
 input [type=text], input [type=number]{
   width: 70%;
@@ -166,16 +235,6 @@ input [type=text], input [type=number]{
 
 */
   
-/* Botón GUARDAR*/
-.btn {
-  background-color: white ;
-  border-color: white ;
-  color: #05386b;
-  margin-top: 15px;
-  font-style: bold;
-  cursor: pointer;
-}
-
 /*Footer*/
 .footer{
   background-color:#05386b;
