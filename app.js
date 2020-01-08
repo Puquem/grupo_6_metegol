@@ -28,11 +28,8 @@ app.set("views", "./views");
 const mainRouter = require('./routes/main');
 app.use('/', mainRouter);
 
-const userLogin = require('./routes/main');
-app.use('/login', userLogin);
-
-const addProduct = require('./routes/main');
-app.use('/addProduct', addProduct);
+const fieldsRouter = require('./routes/fields');
+app.use('/', fieldsRouter);
 
 // ************ DON'T TOUCH FROM HERE ************
 // ************ catch 404 and forward to error handler ************

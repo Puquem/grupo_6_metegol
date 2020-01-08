@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,11 +9,10 @@
 		<!--===============================================================================================-->
 		<link href="/css/fontawesome-free-5.11.2-web/css/all.css" rel="stylesheet">
 		<!--===============================================================================================-->
-		<link rel="stylesheet" href="/css/login.css">
+		<link rel="stylesheet" href="/css/createUser.css">
 	
-		<title>METEGOL | Login</title>
+		<title>METEGOL | Registro</title>
 	</head>
- 
  <body>
 	
 	<!--Header-->
@@ -32,28 +30,32 @@
 		</div>
 	</header>
 		
-	<!--Main Content-->
 	
+	<!--Main Content-->
+
 	<div class="align">
 		<div class="form">
-			<h1>Ingresa</h1>
+			<h1>Crea tu usuario</h1>
 				<div class="user-form">
+								
 					<div class="input-fields">
-						<input type="text" class="input" placeholder="Email*" name="uname" required>
-						<input type="password" class="input" placeholder="Contraseña*" name="pwd" required>
+						<input type="text" class="input" placeholder="Nombre*" required>
+						<input type="text" class="input" placeholder="Email*" required>
+						<input type="password" class="input" placeholder="Contraseña*" required>
 					</div>
+					
+					<div class="input-fields-sd">
+						<input type="text" class="input" placeholder="Apellido*" required>
+						<input type="text" class="input" placeholder="Teléfono*" required>
+						<input type="password" class="input" placeholder="Repetir Contraseña*" required>
+					</div>
+					
 				</div>
-			<div><button type="submit" class="btn btn-primary">INGRESAR</button></div>
-				<div class="manageUser">
-					<ul>
-						<li><a href="/createUser"><i class="fas fa-user-plus"></i>     Crea tu usuario</a></li>
-						<li><a href="/forgotpass"><i class="fas fa-unlock"></i>      Recuperar contraseña</a></li>
-					</ul>
-				</div>	
+			<div><button type="submit" class="btn btn-primary">REGISTRARSE</button></div>	
 		</div>
 	</div>
 	
-	<!--Footer-->
+	<!--Footer -->
 	<footer class="footer fixed-bottom">
 			<div class="footer-left">
 				<a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a>

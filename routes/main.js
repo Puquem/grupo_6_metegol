@@ -11,16 +11,7 @@ router.get('/', mainController.root);
 /* GET - login. */
 router.get('/login', mainController.login);
 
-/* GET - Formulario Producto */
-router.get('/addProduct', mainController.addProduct);
-
-/* POST - Formulario Producto */
-router.post('/addProduct', mainController.saveProduct);
-
-/* GET - detalleProducto */
-router.get('/productDetail/:id', mainController.productDetail);
-
 /* GET - user */
-router.get('/user', mainController.user);
+router.get('/createUser', mainController.user);
 
 module.exports = router;

@@ -498,15 +498,5 @@
   "image2": "http://dummyimage.com/400x400.jpg/cc0000/ffffff",
   "image3": "http://dummyimage.com/400x400.jpg/cc0000/ffffff",
   "Address": "69 Dixon Way"
- },
- {
-  "id": 51,
-  "complejo": "sfdfds",
-  "jugadores": "F5",
-  "fecha": "2020-01-09",
-  "nombreCancha": "sfsdfdf",
-  "horario": "13:00:00",
-  "precio": "45435",
-  "descripcion": " sfdsfdsfdf"
  }
 ]
