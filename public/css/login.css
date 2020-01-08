@@ -11,7 +11,7 @@
 
 body {
   font-family: 'Raleway',sans-serif, Helvetica;
-  background: linear-gradient(rgba(2, 11, 128, 0.5), rgba(2, 160, 94, 0.5)), url(../images/fondo.jpg) no-repeat center center fixed;
+  background: linear-gradient(rgba(2, 11, 128, 0.5), rgba(2, 160, 94, 0.5)) fixed, url(../images/fondo.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -127,7 +127,6 @@ a {
   font-style: bold;
   margin-bottom: 30px;
   font-size: 3vh;
-  margin-left: 5%;
 }
 
 .input-fields input,
@@ -163,6 +162,7 @@ a {
   float: center;
   cursor: pointer;
   margin-top:30px;
+  width: 100%;
 }
 
 .manageUser{

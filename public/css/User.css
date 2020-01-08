@@ -3,16 +3,17 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
 
 /*CSS Base*/
+
 * {
   box-sizing: border-box;
-  margin:0;
-  padding: 0;
-  outline: none;
 }
 
 body {
   font-family: 'Raleway',sans-serif, Helvetica;
-  background: url(../images/fondo.jpg) no-repeat;
+  background: linear-gradient(rgba(2, 11, 128, 0.5), rgba(2, 160, 94, 0.5)) fixed, url(../images/fondo.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
 }
 
@@ -29,12 +30,29 @@ a {
 /*Header*/
 .header{
   background-color:#05386b;
-  overflow: hidden;
-  max-height: 70px;
+  height: 70px;
+}
+
+.header-container {
+  max-width: 1400px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.logo {
+  width: 200px;
+  margin-top: -30px;
+}
+
+.logo img {
+  width: 100%;
 }
 
 .header a{
-  float: left;
+  /*float: left;*/
   color: black;
   text-align: center;
   padding: 12px;
@@ -44,15 +62,12 @@ a {
   border-radius: 4px;
 }
 
-/*Logo*/
-.logo img{
-  float: left;
-  max-height: 50px;
-  margin: 0px 5px
+.hamburguer-icon {
+  display: none;
 }
 
 .header-right {
-  float: right;
+  margin-top: 20px;
 }
 
 .fas fa-shopping-cart{
@@ -77,26 +92,45 @@ a {
   width: auto;
 }
 
-/* USer */
-.form{
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 100%;
-  padding: 0 20px;
+@media (max-width: 670px) {
  
+  .header-right {
+    display: none;
+  }
+ 
+  .hamburguer-icon {
+    display: block;
+  }
 }
 
+/* Main Content*/ 
+
+.align{
+  text-align: center;
+  margin:10%;
+}
+
+.form{
+  display: inline-block;
+  top: 50%;
+  background: rgba(245, 241, 241, 0.8);
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.form h1{
+  color: rgb(65, 65, 65);
+  text-align: left;
+  font-style: bold;
+  margin-bottom: 30px;
+  font-size: 3vh;
+}
 
 .user-form{
   display: flex;
   max-width: 550px;
   margin: 0 auto;
-  background: rgba(245, 241, 241, 0.8);
-  padding: 30px;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
-  
 } 
   
 
@@ -131,20 +165,20 @@ a {
 }
 
 .btn {
-    background: #39b7dd;
-    text-align: center;
-    padding: 15px;
-    border-radius: 5px;
-    color: #fff;
-    cursor: pointer;
-    text-transform: uppercase;
-    float: center;
-    cursor: pointer;
+  background-color:#05386b; ;
+  border-color:#05386b; ;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  float: center;
+  cursor: pointer;
+  margin-top: 30px;
+  width: 100%;
 }
  
-
-
-
 /*Footer*/
 .footer{
   background-color:#05386b;
@@ -207,4 +241,3 @@ a {
       width: 100%;
     }
   } 
-  

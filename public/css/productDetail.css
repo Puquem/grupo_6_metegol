@@ -10,7 +10,7 @@
 
 body {
   font-family: 'Raleway',sans-serif, Helvetica;
-  background: linear-gradient(rgba(2, 11, 128, 0.5), rgba(2, 160, 94, 0.5)), url(../images/fondo.jpg) no-repeat center center fixed;
+  background: linear-gradient(rgba(2, 11, 128, 0.5), rgba(2, 160, 94, 0.5)) fixed, url(../images/fondo.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -111,7 +111,6 @@ a {
 }
 
 .form{
-  display: inline-block;
   top: 50%;
   background: rgba(245, 241, 241, 0.8);
   padding: 30px;
@@ -121,23 +120,26 @@ a {
 
 .nombreCancha{
     margin-top: 45px;
+    margin-bottom: 30px;
     font-size: 40px;
     margin-left: 50px;
     font-weight: bolder;
     position: relative;
 }
+
 .body {
     max-width: 1400px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
+    margin:auto
 }
+
 /* Carousel */
 
 #myCarousel {
     left: 50px;
-    top: 45px;
     width: 30%;
     height: 400px;
     width: 400px;
@@ -149,11 +151,9 @@ a {
 /*Descripcion cancha*/
 .descripcion{
     width: 30%;
-    margin-top: 45px;
     margin-left: 30px;
     justify-content: center;
     align-items: center;
-  
 }
 
 .reserva

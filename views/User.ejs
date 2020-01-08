@@ -17,7 +17,8 @@
 	
 	<!--Header-->
 	<header class="header">
-			<a href="#default" class="logo"><img src="/images/logo.png" alt="logo de metegol"></a>
+		<div class="header-container">
+			<a href="/" class="logo"><img src="/images/logo.png" alt="logo de metegol"></a>
 			<div class="header-right">
 				<ul>
 					<li><a href="/buscoequipo">BUSCO EQUIPO</a></li>
@@ -25,32 +26,34 @@
 					<li><a href="/carrito" title="Carrito"><i class="fas fa-shopping-cart"></i></a></li>
 					<li><a href="/login" title="Log in"><i class="fas fa-user"></i></i></a></li>
 				</ul>
-			</div>	
-		</header>
+			</div>
+		</div>
+	</header>
 		
 	
 	<!--Main Content-->
-		
+
+	<div class="align">
 		<div class="form">
-			
-			<div class="user-form">
-				
-		  		<div class="input-fields">
-					<input type="text" class="input" placeholder="Nombre" required>
-					<input type="text" class="input" placeholder="Email" required>
-					<input type="text" class="input" placeholder="Contraseña" required>
-			
-		  		</div>
-		  		<div class="input-fields-sd">
-					<input type="text" class="input" placeholder="Apellido" required>
-					<input type="text" class="input" placeholder="Teléfono" required>
-					<input type="text" class="input" placeholder="Repetir Contraseña" required>
-					<div class="btn">Registrarse</div> 
-		  		</div>
-				
-			</div>
-			
-	  	</div>	
+			<h1>Crea tu usuario</h1>
+				<div class="user-form">
+								
+					<div class="input-fields">
+						<input type="text" class="input" placeholder="Nombre*" required>
+						<input type="text" class="input" placeholder="Email*" required>
+						<input type="password" class="input" placeholder="Contraseña*" required>
+					</div>
+					
+					<div class="input-fields-sd">
+						<input type="text" class="input" placeholder="Apellido*" required>
+						<input type="text" class="input" placeholder="Teléfono*" required>
+						<input type="password" class="input" placeholder="Repetir Contraseña*" required>
+					</div>
+					
+				</div>
+			<div><button type="submit" class="btn btn-primary">REGISTRARSE</button></div>	
+		</div>
+	</div>
 	
 	<!--Footer -->
 	<footer class="footer fixed-bottom">
