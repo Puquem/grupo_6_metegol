@@ -2,6 +2,44 @@
 const express = require('express');
 const router = express.Router();
 
+//const multer = require ("multer");
+
+// ************ Storage Engine for the field images ************
+// const storage = multer.diskStorage({
+//     destination: function (req, file, cb) { //Where the image is stored
+//       cb(null, __dirname + "../public/images/fields")
+//     },
+//     filename: function (req, file, cb) {  //Image name stored
+//       cb(null, file.fieldname + '-' + Date.now() + path.extname (file.originalname));
+//     }
+// });
+
+// ************ Upload variable ************
+
+// const upload = multer (
+//     {destination: "../public/images/fields" });
+
+//    storage: storage,
+//    fieldSize: (1000000),
+//    fileFilter: function(req, file, cb){
+//        checkFileType(file,cb);
+//    }
+//}).single("image1");
+
+// ************ Check File Type ************
+
+// function checkFileType (file, cb){
+
+//     const filetype = /jpeg|jpg|png/;
+//     const extname =filetype.test(path.extname(file.originalname).toLowerCase());
+//     const mimetype = filetype.test(file.mimetype);
+
+//     if (mimetype && extname){
+//         return cb (null, true);
+//     } else {
+//         cb ("Error: Ingresa sólo imágenes!");}
+// }
+
 // ************ Controller Require ************
 const fieldsController = require('../controllers/fieldsController.js');
 
@@ -27,20 +65,5 @@ router.delete('/field/:id', fieldsController.destroy);*/
 router.get('/', fieldsController.root);*/
 
 module.exports = router;
-
-
-
-/* GET - Formulario Producto 
-router.get('/createField', fieldsController.create);
-
-/* POST - Formulario Producto 
-router.post('/addProduct', mainController.saveProduct);
-
-/* GET - detalleProducto 
-router.get('/productDetail/:id', mainController.productDetail);
-*/
-
-
-
 
 
