@@ -188,7 +188,7 @@ input[type=number] {
   align-items: left;
 }
 
-textarea{
+input{
   background: transparent;
   border: 0px;
   border-bottom: 2px solid #063549;
@@ -196,6 +196,20 @@ textarea{
   width: 100%;
   height: 28px;
   margin: 10px 0px;
+}
+
+.upload-images{
+  display: flex;
+  margin: 0 auto;
+}
+
+.custom-file{
+  flex-direction: column;
+  width: 100%;
+}
+
+.input-group{
+  margin: 0px 1%;
 }
 
 .btn {
