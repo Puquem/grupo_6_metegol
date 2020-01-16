@@ -29,7 +29,7 @@ const mainRouter = require('./routes/main');
 app.use('/', mainRouter);
 
 const fieldsRouter = require('./routes/fields');
-app.use('/', fieldsRouter);
+app.use('/fields', fieldsRouter);
 
 // ************ DON'T TOUCH FROM HERE ************
 // ************ catch 404 and forward to error handler ************

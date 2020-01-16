@@ -4,12 +4,7 @@ const path = require('path'); // path permite unificar la ruta de manera mÃ¡s cÃ
 
 const ubicacionProductosJSON = path.join(__dirname, "../data/products.json") //lee el directorio, arma una ruta del archivo
 let contenidoProductosJSON = fs.readFileSync (ubicacionProductosJSON,'utf-8');
-
-// ************ Function to Read an HTML File ************
-function readHTML (fileName) {
-	let htmlFile = fs.readFileSync(path.join(__dirname, `/../views/${fileName}.html`), 'utf-8');
-	return htmlFile;
-}
+let fields = JSON.parse(contenidoProductosJSON);
 
 function leerArchivo (fileName) {
 	let leerArchivo = fs.readFileSync(path.join(__dirname, `/../data/${fileName}.json`), 'utf-8');
@@ -18,8 +13,22 @@ function leerArchivo (fileName) {
 
 // controller es la ruta que se exporta
 const controller = {
+	index:(req, res) => {
+		// Me traigo todos los productos
+		
+		// Renderizo la vista con los productos
+		res.render('fields/index',{fields});
+	},
+
 	create: (req, res) => {
 		res.render("createField");
+	},
+
+	show: (req, res) => {
+		let canchas=JSON.parse(leerArchivo("products"));
+		let idCancha=req.params.id;
+		let cancha=canchas[idCancha];
+		res.render('showField',{cancha});
 	},
 
 	store: (req, res) => {
@@ -59,14 +68,6 @@ const controller = {
 
 		fs.writeFileSync (productsJSON, JSON.stringify (deleteProduct, null, " "));
 		res.redirect ("/")
-	},
-
-	show: (req, res) => {
-		
-		let canchas=JSON.parse(leerArchivo("products"));
-		let idCancha=req.params.id;
-		let cancha=canchas[idCancha];
-		res.render('showField',{cancha});
 	},
 
 };

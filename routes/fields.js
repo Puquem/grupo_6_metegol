@@ -1,30 +1,29 @@
 // ************ Require's ************
 const express = require('express');
 const router = express.Router();
+const multer = require ("multer");
+const path = require ("path");
 
-//const multer = require ("multer");
-
-// ************ Storage Engine for the field images ************
-// const storage = multer.diskStorage({
-//     destination: function (req, file, cb) { //Where the image is stored
-//       cb(null, __dirname + "../public/images/fields")
-//     },
-//     filename: function (req, file, cb) {  //Image name stored
-//       cb(null, file.fieldname + '-' + Date.now() + path.extname (file.originalname));
-//     }
-// });
+//************ Storage Engine for the field images ************
+const diskStorage = multer.diskStorage({
+    destination: function (req, file, cb) { //Where the image is stored
+      cb(null, path.join(__dirname + "/../public/images/fields"))
+    },
+    filename: function (req, file, cb) {  //Image name stored
+      cb(null, file.fieldname + '-' + Date.now() + path.extname (file.originalname));
+    }
+});
 
 // ************ Upload variable ************
 
-// const upload = multer (
-//     {destination: "../public/images/fields" });
+const upload = multer ({
+   storage: diskStorage});
 
-//    storage: storage,
 //    fieldSize: (1000000),
 //    fileFilter: function(req, file, cb){
-//        checkFileType(file,cb);
+//     checkFileType(file,cb);
 //    }
-//}).single("image1");
+// }).single("image1");
 
 // ************ Check File Type ************
 
@@ -43,11 +42,14 @@ const router = express.Router();
 // ************ Controller Require ************
 const fieldsController = require('../controllers/fieldsController.js');
 
+/* GET - Fields List*/
+router.get('/', fieldsController.index);
+
 /* GET - Create Field Form*/
 router.get('/createField', fieldsController.create);
 
 /* POST - Create Field Form*/
-router.post('/createField', fieldsController.store);
+router.post('/createField', upload.single("image1"), fieldsController.store);
 
 /* GET - Edit Field Form
 router.get('/field/:id/edit', fieldsController.edit);*/
@@ -60,9 +62,6 @@ router.get('/field/:id', fieldsController.show);
 
 /* DELETE - Edit Field Detail
 router.delete('/field/:id', fieldsController.destroy);*/
-
-/* DELETE- Edit Field
-router.get('/', fieldsController.root);*/
 
 module.exports = router;
 
