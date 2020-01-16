@@ -12,14 +12,6 @@ const controller = {
 	root: (req, res) => {
 		res.render("index");
 	},
-	 
-	login: (req, res) => {
-		res.render("login");
-	},
-
-	user: (req, res) => {
-		res.render('createUser');
-	},
 };
 
 module.exports = controller 

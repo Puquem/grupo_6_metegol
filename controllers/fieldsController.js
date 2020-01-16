@@ -21,14 +21,14 @@ const controller = {
 	},
 
 	create: (req, res) => {
-		res.render("createField");
+		res.render("fields/create");
 	},
 
 	show: (req, res) => {
 		let canchas=JSON.parse(leerArchivo("products"));
 		let idCancha=req.params.id;
 		let cancha=canchas[idCancha];
-		res.render('showField',{cancha});
+		res.render('fields/:id',{cancha});
 	},
 
 	store: (req, res) => {
@@ -67,7 +67,7 @@ const controller = {
 		}) 
 
 		fs.writeFileSync (productsJSON, JSON.stringify (deleteProduct, null, " "));
-		res.redirect ("/")
+		res.redirect ("/fields/show")
 	},
 
 };

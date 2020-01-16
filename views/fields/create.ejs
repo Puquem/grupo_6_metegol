@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<%- include("partials/head.ejs")%> 
+	<%- include("../partials/head.ejs")%> 
 	<!--===============================================================================================-->
 	<link rel="stylesheet" href="/css/createField.css">
 
@@ -11,13 +11,13 @@
 <body>
     <!--Header-->
 
-    <%- include("partials/header.ejs")%> 
+    <%- include("../partials/header.ejs")%> 
     
     <!--Main Content-->
 
     <div class="align">
       <div class="form">
-        <form action="/createField" method="POST" enctype="multipart/form-data">
+        <form action="/fields/create" method="POST" enctype="multipart/form-data">
         <h1>Agregar cancha</h1>
           <div class="field-form">
                   
@@ -88,7 +88,7 @@
     </div>
         
     <!--Footer-->
-    <%- include("partials/footer.ejs")%> 
+    <%- include("../partials/footer.ejs")%> 
     
 	</div>
 </body>

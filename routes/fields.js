@@ -46,10 +46,10 @@ const fieldsController = require('../controllers/fieldsController.js');
 router.get('/', fieldsController.index);
 
 /* GET - Create Field Form*/
-router.get('/createField', fieldsController.create);
+router.get('/create', fieldsController.create);
 
 /* POST - Create Field Form*/
-router.post('/createField', upload.single("image1"), fieldsController.store);
+router.post('/create', upload.single("image1"), fieldsController.store);
 
 /* GET - Edit Field Form
 router.get('/field/:id/edit', fieldsController.edit);*/
@@ -58,7 +58,7 @@ router.get('/field/:id/edit', fieldsController.edit);*/
 router.patch('/field/:id/edit', fieldsController.update);*/
 
 /* GET - Field Detail*/
-router.get('/field/:id', fieldsController.show);
+router.get('/:id', fieldsController.show);
 
 /* DELETE - Edit Field Detail
 router.delete('/field/:id', fieldsController.destroy);*/

@@ -31,6 +31,9 @@ app.use('/', mainRouter);
 const fieldsRouter = require('./routes/fields');
 app.use('/fields', fieldsRouter);
 
+const usersRouter = require('./routes/users');
+app.use('/users', usersRouter);
+
 // ************ DON'T TOUCH FROM HERE ************
 // ************ catch 404 and forward to error handler ************
 app.use((req, res, next) => next(createError(404)));
