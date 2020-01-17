@@ -49,19 +49,19 @@ router.get('/', fieldsController.index);
 router.get('/create', fieldsController.create);
 
 /* POST - Create Field Form*/
-router.post('/create', upload.single("image1"), fieldsController.store);
+router.post('/create', upload.any(), fieldsController.store);
 
 /* GET - Edit Field Form
-router.get('/field/:id/edit', fieldsController.edit);*/
+router.get('/:id/edit', fieldsController.edit);*/
 
 /* PATCH - Edit Field Form
-router.patch('/field/:id/edit', fieldsController.update);*/
+router.patch('/:id/edit', fieldsController.update);*/
 
 /* GET - Field Detail*/
 router.get('/:id', fieldsController.show);
 
-/* DELETE - Edit Field Detail
-router.delete('/field/:id', fieldsController.destroy);*/
+/* DELETE - Edit Field Detail */
+router.delete('/:id', fieldsController.destroy);
 
 module.exports = router;
 

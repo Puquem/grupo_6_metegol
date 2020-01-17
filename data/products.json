@@ -498,5 +498,18 @@
   "image2": "http://dummyimage.com/400x400.jpg/cc0000/ffffff",
   "image3": "http://dummyimage.com/400x400.jpg/cc0000/ffffff",
   "Address": "69 Dixon Way"
+ },
+ {
+  "id": 51,
+  "complexName": "Digital House",
+  "address": "Monroe 860",
+  "fieldType": "F7",
+  "name": "DH",
+  "phone": "12345678987654",
+  "price": "166789",
+  "description": "Los servicios",
+  "image1": "image1-1579218830073.jpg",
+  "image2": "image2-1579218830150.jpg",
+  "image3": "image3-1579218830161.jpg"
  }
 ]

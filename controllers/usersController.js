@@ -4,11 +4,11 @@ const path = require('path'); // path permite unificar la ruta de manera mÃ¡s cÃ
 const controller = {
 	 
 	login: (req, res) => {
-		res.render("/users/login");
+		res.render("users/login");
 	},
 
 	user: (req, res) => {
-		res.render('/users/create');
+		res.render('users/create');
 	},
 };
 

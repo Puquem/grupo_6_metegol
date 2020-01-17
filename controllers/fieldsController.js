@@ -28,10 +28,11 @@ const controller = {
 		let canchas=JSON.parse(leerArchivo("products"));
 		let idCancha=req.params.id;
 		let cancha=canchas[idCancha];
-		res.render('fields/:id',{cancha});
+		res.render('fields/show',{cancha});
 	},
 
 	store: (req, res) => {
+
 		let arrayDeProductos = [] ;
 
 		//si el archivo no está vacío
@@ -40,11 +41,15 @@ const controller = {
 		//tomo el contenido y lo convierto en un formato de array de objetos literales
 			arrayDeProductos = JSON.parse(contenidoProductosJSON);
 		};
+	
 
 		//creo ID de producto (en primer lugar) y le sumo el id a los productos consiguientes
 		req.body = {
 			id: arrayDeProductos.length == 0 ? 1 : arrayDeProductos.length + 1,
-			...req.body
+			...req.body,
+			image1: req.files[0].filename,
+			image2: req.files[1].filename,
+			image3: req.files[2].filename,
 		}
 
 		//inserto producto nuevo
@@ -67,7 +72,7 @@ const controller = {
 		}) 
 
 		fs.writeFileSync (productsJSON, JSON.stringify (deleteProduct, null, " "));
-		res.redirect ("/fields/show")
+		res.redirect ("fields")
 	},
 
 };
